@@ -1,0 +1,23 @@
+CREATE TABLE income_item(
+  income_item_id INT(5) AUTO_INCREMENT PRIMARY KEY NOT NULL,
+  item CHAR(20) NOT NULL,
+  desc1 VARCHAR(200),
+  desc2 VARCHAR(200),
+  income_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE outlay_item(
+  outlay_item_id INT(5) AUTO_INCREMENT PRIMARY KEY NOT NULL,
+  item CHAR(20) NOT NULL,
+  desc1 VARCHAR(200),
+  desc2 VARCHAR(200),
+  outlay_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE outlay_subitem(
+  outlay_subitem_id INT(5) AUTO_INCREMENT PRIMARY KEY NOT NULL,
+  subitem CHAR(20) NOT NULL,
+  desc1 VARCHAR(200),
+  desc2 VARCHAR(200),
+  outlay_subitem_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

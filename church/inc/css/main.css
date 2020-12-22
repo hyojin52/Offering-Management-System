@@ -1,0 +1,121 @@
+/*commons*/
+.title_1{
+  color: #344043;
+  font-size: 30px;
+  font-weight: bold;
+}
+.title_2{
+  color: #344043;
+  font-size: 20px;
+  font-weight: normal;
+}
+.input_desc{
+  color: #344043;
+  width: 55px;
+  display: inline-block;
+}
+input[type=submit]{
+  width:90px;
+  background-color: #C6D8D9;
+  border: 1px solid #344043;
+  border-radius: 5px;
+  margin: 2px;
+  text-align: center;
+  padding: 3px;
+}
+input, select{
+  border-radius: 5px;
+  border: 1px solid #344043;
+  padding: 3px;
+  color: #344043;
+  vertical-align: middle;
+}
+.blank10{margin: 10px;}
+.blank5{margin: 5px;}
+
+/*main.php*/
+#main_board:after{
+  clear: both;
+  display: block;
+  content: '';
+}
+#main_left_board{
+  width:20%;
+  float:left;
+  border: 1px solid blue;
+}
+.main_left_board_item{
+  border: 1px solid #ADD6D8;
+  background-color: #ADD6D8;
+  border-radius: 10px;
+  margin: 5px;
+  text-align: center;
+  padding:3px;
+}
+.main_left_board_item_selected, .main_left_board_item:hover{
+  border: 1px solid #6CADAE;
+  background-color: #6CADAE;
+}
+.main_left_board_item a{
+  color: #344043;
+  text-decoration: none;
+}
+#main_right_board{
+  width:75%;
+  float:left;
+  border: 1px solid yellow;
+  border-left: 1px solid #C6D8D9;
+  padding: 10px;
+}
+
+/*_income_input.php, _outlay_input.php*/
+.offering, .outlay{
+  border: 1px solid #344043;
+  background-color: #6CADAE;
+  border-radius: 5px;
+  margin: 2px;
+  text-align: center;
+  padding: 3px;
+}
+.offering{
+  width: 19.4%;
+  min-width: 90px;
+}
+.outlay{
+  width: 13%;
+  min-width: 65px;
+}
+.offering_selected, .outlay_selected, .offering:hover, .outlay:hover{
+  background-color: #344043;
+  color: #ADD6D8;
+}
+#input_field{
+  background-color: #ADD6D8;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+#input_table_title_no, #input_table_title_name, #input_table_title_sum{
+  background-color: #344043;
+  color: #ADD6D8;
+  line-height: 25px;
+}
+.input_table_data_row:after{
+   clear: both;
+   display: block;
+   content: '';
+}
+.input_table_data_no, #input_table_title_no, .input_table_data_name, #input_table_title_name, .input_table_data_sum, #input_table_title_sum{
+  float: left;
+  text-align: center;
+  border-bottom: 1px solid #344043;
+  height: 25px;
+}
+.input_table_data_no, #input_table_title_no{
+  width: 5%;
+  min-width: 50px;
+  line-height: 25px;
+}
+.input_table_data_name, .input_table_data_sum, #input_table_title_name, #input_table_title_sum{
+  width: 25%;
+  min-width: 150px;
+}
