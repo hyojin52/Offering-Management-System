@@ -1,7 +1,7 @@
 <?php
 	$servername = "localhost";
-	$username = "ubinet2018";
-	$password = "rlagywls12*";
+	$username = "";
+	$password = "";
 	$dbname = "ubinet2018";
 
 
